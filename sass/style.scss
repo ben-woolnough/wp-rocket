@@ -1,0 +1,131 @@
+/*
+Theme Name: Rocket
+*/
+
+// Imports
+@import 'vars';
+@import 'reset';
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.center-image img {
+  display: block;
+  margin: auto;
+}
+
+
+
+#logo-image {
+  display: block;
+  margin: 5px auto;
+}
+
+#logo-text {
+  text-align: center;
+}
+
+.navbar-top {
+  background: $lightGray;
+  box-shadow: 0 0 5px #000;
+  border-radius: 3px;
+  margin: 0px 60px 40px 60px;
+  padding: 15px;
+  ul {
+    margin: 0;
+    text-align: center;
+  }
+  li {
+    display: inline;
+  }
+  a {
+    color: darken($lightGray, 70%);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 3px;
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background: darken($lightGray, 50%);
+      color: $lightGray;
+    }
+    &.active {
+      border-bottom: #4f7 5px solid;
+    }
+  }
+}
+
+.features {
+  margin: 100px auto 0 auto;
+  width: 70%;
+}
+
+@media (min-width: 1000px) {
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  img {
+    max-width: 1000px !important;
+  }
+}
+
+.flex-container .container-box {
+  background: $lightGray;
+  box-shadow: 0 0 5px #000;
+  flex-basis: 20%;
+  margin-bottom: 50px;
+  img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+  h3, p {
+    padding: 0 15px;
+    text-align: center;
+  }
+}
+
+.footer {
+  background: darken($lightGray, 70%);
+  color: $lightGray;
+  height: 50px;
+  div {
+    text-align: center;
+    position: relative;
+    top: 15px;
+  }
+}
+
+.page-container {
+  margin: auto;
+  width: 60%;
+  margin-bottom: 40px;
+}
+
+.posts {
+  margin: auto;
+  width: 35%;
+  .post {
+    background: $lightGray;
+    box-shadow: 0 0 5px #000;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+  .post-title a {
+    color: darken($color1, 25%);
+    text-decoration: none;
+  }
+  .post-meta {
+    font-size: 80%;
+    font-weight: bold;
+  }
+}
