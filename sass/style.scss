@@ -112,7 +112,16 @@ h1, h2 {
 
 .posts {
   margin: auto;
-  width: 35%;
+  width: 600px;
+
+  @media (max-width: 1450px) {
+    margin-left: 60px;
+  }
+  @media (max-width: 1100px) {
+    margin: auto;
+    width: 90%;
+  }
+
   .post {
     background: $lightGray;
     box-shadow: 0 0 5px #000;
@@ -127,5 +136,15 @@ h1, h2 {
   .post-meta {
     font-size: 80%;
     font-weight: bold;
+  }
+}
+
+
+.sidebar {
+  margin-right: 60px;
+  float: right;
+  padding: 10px;
+  @media (max-width: 1100px) {
+    display: none;
   }
 }
